@@ -1,3 +1,3 @@
 # Search-Algorithms
-List of AI search algorithms
+AI search algorithms
 
