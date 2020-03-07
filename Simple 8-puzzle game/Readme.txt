@@ -1,2 +1,1 @@
-In the simple 8 puzzle problem, the breadth-first search algorithm is used to find the goal state. The algorithm uses 
-the library "tiles" to expand the given states and find their successors. The problem is explained in the "Puzzle Manual" PDF.
+In the simpler version of the 8 Puzzle problem, a breadth-first search algorithm is used to solve the problem. The algorithm uses the tiles library to expand a given state and find its successors. The problem is explained in the manual.
