@@ -27,9 +27,17 @@ def define_blocks(state, list_blocks):  # Converts values of blocks to objects o
                 under_value = state_copy[rows+2][columns]
             except IndexError:
                 under_value = 'No value under it'
+            try:
+                right_value = state_copy[rows + 2][columns+1]
+            except IndexError:
+                right_value = 'No value right to it'
+            try:
+                left_value = state_copy[rows+2][columns-1]
+            except IndexError:
+                left_value = 'No value left to it'
             if value == 1:
                 list_blocks.append(Block('blue', (rows, columns)))
-            elif value == 2 and state_copy[rows + 1][columns] == 2 and under_value != 2:
+            elif value == 2 and state_copy[rows + 1][columns] == 2 and (under_value == 2 and (right_value == 2 or left_value == 2) or under_value != 2):
                 list_blocks.append(Block('green', (rows, columns), direction='vertical'))
                 state_copy[rows + 1][columns] = 'ALREADY DEFINED AS VERTICAL'
             elif value == 2 and state_copy[rows][columns + 1] == 2:
