@@ -46,4 +46,5 @@ state = 'PLEASE ENTER A VALID STATE HERE' \
         '1 RED BLOCK' \
         '6 BLUE BLOCKS' \
         '2 EMPTY BLOCKS '
+' EXAMPLE STATE [ [1,2,1,1], [1,2,4,4], [2,2,4,4], [1,1,0,0] ]'
 visualise.start_simulation(depth_first_search(state))
