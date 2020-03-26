@@ -1,0 +1,1 @@
+In the simpler version of the 8 Puzzle problem, a breadth-first search algorithm is used to solve the problem. The algorithm uses the tiles library to expand a given state and find its successors. The problem is explained in the manual.
