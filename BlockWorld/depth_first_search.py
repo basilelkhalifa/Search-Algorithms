@@ -16,7 +16,6 @@ def depth_first_search(initial_state):
     end = 1
     expanded_initial_state = False
     while state_index < end:
-        print(successors[state_index])
         if not expanded_initial_state:
             initial_state_successor = find_successors(initial_state)
             successors.append(initial_state_successor[0])
@@ -39,10 +38,8 @@ def depth_first_search(initial_state):
             successors.pop(end-1)
             state_index -= 2
             end = len(successors)
-
     return successors
-
-
+	
 state = 'PLEASE ENTER A VALID STATE HERE' \
         'PLEASE MAKE SURE THAT YOUR STATE HAS THE FOLLOWING BLOCKS:' \
         '2 GREEN BLOCKS ( ONE VERITCAL AND THE OTHER HORIZONTAL)' \
