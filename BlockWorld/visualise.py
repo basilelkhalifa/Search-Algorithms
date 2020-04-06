@@ -59,7 +59,7 @@ class BlockInterface(object):
         i=0
         while True:
             try:
-                time.sleep(0.1)
+                time.sleep(1)
                 G= self.trace[i]
                 self.update_grid(G)
                 i+=1
