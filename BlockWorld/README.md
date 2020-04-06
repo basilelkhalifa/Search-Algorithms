@@ -25,4 +25,4 @@ Assume that the red block is trying to find its way out of the environment, and 
 
 ![](/BlockWorld/sample_images/goal_state.png)
 
-In the following repo, the puzzle is solved using the breadth-fisrt search and the depth-first search algorithms.
+In the following repo, the puzzle is solved using the breadth-fisrt search the depth-first search and a* search algorithms.
