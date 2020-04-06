@@ -24,3 +24,5 @@ Each block in the block world can slide into an empty space adjacent to it, as l
 Assume that the red block is trying to find its way out of the environment, and the only door is at the bottom left corner. The goal test for this puzzle is therefore to find a configuration that has the red block at the bottom left corner. An example of such a goal state is given in the firgure below.
 
 ![](/BlockWorld/sample_images/goal_state.png)
+
+In the following repo, the puzzle is solved using the breadth-fisrt search and the depth-first search algorithms.
